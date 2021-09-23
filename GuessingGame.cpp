@@ -14,8 +14,11 @@ int main()
       cout << "You Entered: " << input << endl;
       if input == randnum {
 	  cout << "You guessed the number!" << endl;
-	  
-	}				      
+	  cout << "Would You Like to Play Again? y/n" << endl;
+	}
+      else {
+	break;
+      }
       return 0;
     }
 }
