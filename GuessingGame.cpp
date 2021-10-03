@@ -10,8 +10,7 @@ as displaying how many attempts it took the to get the correct answer
 using namespace std;
 char chr;
 
-int main()
-{
+int main() {
 	int number = 0;
 	int guess = 0;
 	int tries = 0;
@@ -29,14 +28,15 @@ int main()
 	} while(number > guess);
 		cout <<"Too low try again" <<endl;
 		tries++;
-	if (number==guess)
+	if (number==guess) {
 		cout << "You guessed the number! " <<endl;
-	cout << "It took you " << tries << " tries";
+		cout << "It took you " << tries << " tries";
+	}
 	do
 	{
-cout << "Would you like to play again?  Enter Y/N";
+		cout << "Would you like to play again?  Enter Y/N";
 		cin >> answer;
-    if ('N')
+    	if ('N') {
 		cout << "Thanks for playing!";
 	} while(answer='Y');
 			
